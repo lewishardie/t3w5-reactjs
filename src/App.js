@@ -1,6 +1,7 @@
 import './App.css';
 import FruitList from './FruitList';
 import Title from './Title';
+import Footer from './Footer';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <ol>
         <FruitList />
       </ol>
+      <Footer />
     </div>
   );
 }

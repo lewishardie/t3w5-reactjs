@@ -10,7 +10,9 @@ let someFruit = [
   ];
 
 export default function FruitList () {
-    let fruitListItems = someFruit.map((fruit => <li>{fruit}</li>))
+    //-- It's not a good practise to use index as a key, if its an array of objects, use the object id as a key
+    // let fruitListItems = someFruit.map(((fruit, index) => <li key={fruit}>{fruit}</li>))
+    let fruitListItems = someFruit.map((fruit => <li key={fruit}>{fruit}</li>))
     return fruitListItems;
 }
 
